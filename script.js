@@ -44,6 +44,27 @@ navbar.classList.remove('active');
     document.body.classList.toggle('dark-mode');
   };
 
+// my service part desplay the description
+const serviceBoxes = document.querySelectorAll('.services-box');
+
+serviceBoxes.forEach(box => {
+
+    const readMoreBtn = box.querySelector('.btn');
+    const moreContent = box.querySelector('.more-content');
+
+    readMoreBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        if (moreContent.style.display === 'none') {
+            moreContent.style.display = 'block';
+            readMoreBtn.textContent = 'Read Less';
+        } else {
+            moreContent.style.display = 'none';
+            readMoreBtn.textContent = 'Read More';
+        }
+    });
+});
+
   let fname = document.getElementById("txt").value;
   let email = document.getElementById("email").value;
   let phone = document.getElementById("num").value;
@@ -58,3 +79,16 @@ navbar.classList.remove('active');
         document.getElementById("email").innerHTML = ("Email can't be blank")
     }
   }
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById("txt").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("num").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink;
+  });

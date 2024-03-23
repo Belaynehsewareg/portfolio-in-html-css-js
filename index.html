@@ -38,11 +38,11 @@
             <h3>Hello, I am</h3>
             <h1>Belayneh</h1>
             <p>My name is belayneh sewareg. I am studing software engineering at adama science and technology University.
-                   I would like to be great web developer in Ethiopia
+                   I would like to be a great web developer in Ethiopia
             </p>
             <div class="social-media">
-                <a href="https://www.facebook.com/biela-king/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/belayneh211/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/belayneh.21/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/belayneh_21/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://t.me/belayneh_21"><i class="fa-brands fa-telegram"></i></a>
                 <a href="https://github.com/Belaynehsewareg"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -117,7 +117,9 @@
                 </li>
             </ul>
             
-            <a href="#" class="btn">Read More</a>
+            <a href="./Belayneh sewareg Resume .pdf" download="belaynehResume">
+                <button class="btn" role="button">Read More</button>
+            </a>
         </div>
     </section>
 
@@ -127,22 +129,23 @@
         <div class="services-container">
             <div class="services-box">
                 <h3>Front-End Development</h3>
-                <p>One of the most provide services is Front-End  Development.  I would like to share my web development skill, and 
-                    if you went more dicription about my services is press read more button
+                <p class="more-content" style="display: none;">Our front-end development service focuses on creating the visual elements of your website or web application. We design and build the parts of your site that users interact with directly, ensuring a seamless and intuitive experience.
+                    Our service -user friendly design, responsive, cross-Browser compatibility
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="services-box">
                 <h3>Networking</h3>
-                <p>One of the most provide services is networking.  I would like to share my networking skill, and 
-                    if you went more dicription about my services is press read more button
+                <p class="more-content" style="display: none;">Our networking services focus on establishing and maintaining reliable communication between devices, systems, and users. We ensure that your network infrastructure is secure, efficient, and capable of meeting your organization's needs.
+                    Our Service  Network Design and Implementation, Network Security..
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="services-box">
                 <h3>Back-End development</h3>
-                <p>One of the most provide services is Back-End Development.  I would like to share my frontend development skill, and 
-                    if you went more dicription about my services is press read more button
+                <p class="more-content" style="display: none;">Our back-end development service focuses on the behind-the-scenes functionality 
+                    of your website or web application. We handle the server-side logic and database management, ensuring that your site runs smoothly and efficiently.
+                    Our Service server-side programming, database management ...
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
@@ -221,17 +224,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="#" onsubmit="sendEmail()">
             <div class="input-box">
                 <input type="text" id="txt" placeholder="Full Name" >
                 <input type="email" id="email" placeholder="Email Address" >
             </div>
             <div class="input-box">
-                <input type="number" id="num" placeholder="Mobile Number">
+                <input type="tel" id="num" placeholder="Mobile Number">
                 <input type="text" placeholder="Email subject">
             </div>
             <textarea name="" id="message" cols="30" rows="0" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn" id="bttn">
+            <input type="submit" value="Send Message" class="btn" id="bttn" onclick="sendEmail()">
         </form>
 
 
