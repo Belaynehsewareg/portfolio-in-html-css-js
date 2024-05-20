@@ -26,7 +26,7 @@ To run this project locally:
 
 ## Deployment
 
-This website is deployed and accessible at https://belaynehsewareg.github.io/portfolio-in-html-css-js/
+This website is deployed and accessible at https://belayneh-21.github.io/portfolio-in-html-css-js/
 
 ## Contributing
 
